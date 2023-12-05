@@ -11,11 +11,13 @@ export class ProductService {
   constructor(private http: HttpClient) {}
 
   getProducts(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}/api/products`);
+    return new Observable<any[]>();
+    // return this.http.get<any[]>(`${this.apiUrl}/api/products`);
   }
 
   getOrderedProducts(): Observable<any[]> {
     // Assuming there is a different API endpoint for ordered products
-    return this.http.get<any[]>(`${this.apiUrl}/api/products`);
+    // return this.http.get<any[]>(`${this.apiUrl}/api/products`);
+    return new Observable<any[]>();
   }
 }
