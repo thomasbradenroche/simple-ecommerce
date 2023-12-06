@@ -1,5 +1,7 @@
 # simple-ecommerce
 
+MEAN Stack
+
 ## Build API
 
 1. cd server
